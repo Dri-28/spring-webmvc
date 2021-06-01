@@ -11,19 +11,20 @@ import java.util.List;
 public class JediRepository {
     private List<Jedi> jedi;
 
-    public JediRepository(){
-        jedi=new ArrayList<>();
-        jedi.add(new Jedi("Luke","Skywalker"));
+    public JediRepository() {
+        jedi = new ArrayList<>();
+        jedi.add(new Jedi("Luke", "Skywalker"));
 
     }
 
-    public List<Jedi> getAllJedi(){
+    public List<Jedi> getAllJedi() {
 
         return this.jedi;
     }
 
-    public void add(Jedi jedi) {
+    public void add(final Jedi jedi){
         this.jedi.add(jedi);
     }
+
 
 }
